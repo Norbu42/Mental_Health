@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Mental Health Awareness</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#4b2e83;
+            color:#ffffff;
+            line-height:1.8;
+            font-size:18px;
+        }
+
+        /* Navigation */
+
+        nav{
+            background:#2d1b4e;
+            padding:18px 25px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            flex-wrap:wrap;
+            position:sticky;
+            top:0;
+            z-index:1000;
+        }
+
+        /* Logo */
+
+        .logo{
+            display:flex;
+            align-items:center;
+            gap:15px;
+        }
+
+        .logo img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    background:white;
+    padding:5px;
+}
+
+        .logo h2{
+            font-size:28px;
+            color:white;
+        }
+
+        /* Navigation Links */
+
+        .nav-links{
+            display:flex;
+            gap:30px;
+            flex-wrap:wrap;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-size:22px;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:#d8b4ff;
+        }
+
+        /* Hero */
+
+        .hero{
+            text-align:center;
+            padding:80px 20px;
+            background:linear-gradient(to right,#5e3ea1,#8b5cf6);
+        }
+
+        .hero h1{
+            font-size:60px;
+            margin-bottom:15px;
+        }
+
+        .hero p{
+            font-size:22px;
+            max-width:900px;
+            margin:auto;
+        }
+
+        /* Container */
+
+        .container{
+            width:90%;
+            max-width:1100px;
+            margin:auto;
+            padding:50px 0;
+        }
+
+        /* Cards */
+
+        .card{
+            background:#6d4ca3;
+            padding:40px;
+            border-radius:18px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.25);
+            margin-bottom:40px;
+        }
+
+        h2{
+            margin-bottom:20px;
+            color:#f3e8ff;
+            font-size:32px;
+        }
+
+        p{
+            margin-bottom:20px;
+            font-size:20px;
+        }
+
+        ul{
+            margin-left:30px;
+            font-size:20px;
+        }
+
+        li{
+            margin-bottom:12px;
+        }
+
+        /* Footer */
+
+        footer{
+            background:#2d1b4e;
+            text-align:center;
+            padding:25px;
+            margin-top:40px;
+        }
+
+        footer p{
+            font-size:18px;
+        }
+
+        /* Responsive */
+
+        @media(max-width:768px){
+
+            nav{
+                justify-content:center;
+                gap:20px;
+            }
+
+            .nav-links{
+                justify-content:center;
+            }
+
+            .hero h1{
+                font-size:42px;
+            }
+
+            .hero p{
+                font-size:20px;
+            }
+
+            .logo h2{
+                font-size:22px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <!-- Logo Section -->
+
+        <div class="logo">
+
+            <!-- Put your generated logo image here -->
+            <img src="images/logo.jpeg" alt="Mental Health Logo">
+
+            <h2>Mental Health</h2>
+
+        </div>
+
+        <!-- Navigation Links -->
+
+        <div class="nav-links">
+
+            <a href="index.html">Mental Health</a>
+            <a href="About.html">About Us</a>
+            <a href="Contact.html">Contact Us</a>
+
+        </div>
+
+    </nav>
+
+    <!-- Hero -->
+
+    <section class="hero">
+
+        <h1>About This Website</h1>
+
+        <p>
+            Why this mental health awareness project was created
+            and what inspired it.
+        </p>
+
+    </section>
+
+    <!-- Content -->
+
+    <div class="container">
+
+        <div class="card">
+
+            <h2>Why I Made This Website</h2>
+
+            <p>
+                I created this mental health awareness website to help people understand
+                the importance of mental well-being and to spread awareness about mental health issues.
+            </p>
+
+            <p>
+                Many people struggle silently with stress, anxiety, and depression.
+                This website is designed to provide simple information, support ideas,
+                and healthy living tips that can make a positive difference in everyday life.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h2>What Inspired Me</h2>
+
+            <p>
+                I was inspired by seeing how mental health affects students, families,
+                and people in daily life.
+            </p>
+
+            <p>
+                Many people do not talk about their feelings,
+                and this can sometimes lead to serious emotional struggles.
+            </p>
+
+            <p>
+                I wanted to create something that encourages people to:
+            </p>
+
+            <ul>
+                <li>Talk openly about mental health</li>
+                <li>Seek help without fear or shame</li>
+                <li>Practice healthy habits</li>
+                <li>Support others going through difficulties</li>
+            </ul>
+
+        </div>
+
+        <div class="card">
+
+            <h2>My Goal</h2>
+
+            <p>
+                My goal is to raise awareness, reduce stigma,
+                and encourage kindness and understanding toward people
+                facing mental health challenges.
+            </p>
+
+            <p>
+                Even small actions like listening, supporting,
+                and caring can make a big difference.
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

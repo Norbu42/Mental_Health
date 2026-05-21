@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Awareness</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            font-size: 18px;
+        }
+
+        body {
+            background: #4b2e83;
+            color: #ffffff;
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+
+        /* Navigation */
+        nav {
+            background: #2d1b4e;
+            padding: 1.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            flex-wrap: wrap;
+        }
+
+        /* Logo */
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-right: auto;
+            margin-left: 1rem;
+        }
+
+        .logo img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    background:white;
+    padding:5px;
+}
+
+        .logo span {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.125rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d8b4ff;
+        }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 4rem 1.25rem;
+            background: linear-gradient(to right, #5e3ea1, #8b5cf6);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 60rem;
+            margin: auto;
+        }
+
+        /* Main Container */
+        .container {
+            width: 90%;
+            max-width: 1300px;
+            margin: auto;
+            padding: 2.5rem 0;
+        }
+
+        /* Cards */
+        .card,
+        .mini-card,
+        .main-card,
+        .video-card {
+            background: #6d4ca3;
+            padding: 1.5rem;
+            margin-bottom: 2.25rem;
+            border-radius: 1.125rem;
+            box-shadow: 0 0.3rem 0.9rem rgba(0, 0, 0, 0.25);
+            transition: 0.3s;
+        }
+
+        .card:hover,
+        .mini-card:hover {
+            transform: translateY(-0.3rem);
+        }
+
+        .card h2,
+        .main-card h2,
+        .video-card h2 {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            color: #f3e8ff;
+        }
+
+        .mini-card h3 {
+            margin-bottom: 0.75rem;
+            font-size: 1.5rem;
+            color: #e9d5ff;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.125rem;
+        }
+
+        ul,
+        ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.25rem;
+            font-size: 1.125rem;
+        }
+
+        li {
+            margin-bottom: 0.625rem;
+        }
+
+        /* Images */
+        img {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 1.25rem auto;
+            border-radius: 0.75rem;
+        }
+
+        iframe {
+            display: block;
+            margin: 1.5rem auto;
+            max-width: 100%;
+            border-radius: 0.75rem;
+        }
+
+        /* Grid */
+        .grid,
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+            gap: 1.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #2d1b4e;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2.5rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        footer a:hover {
+            color: #d8b4ff;
+        }
+
+        a {
+            color: #f5d0fe;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            .logo {
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+
+        <!-- Logo -->
+        <div class="logo">
+            <!-- Put your generated image path below -->
+            <img src="images/logo.jpeg" alt="Mental Health Logo">
+            <span>Mental Health</span>
+        </div>
+
+        <a href="#mental-health">Mental Health</a>
+        <a href="About.html">About Us</a>
+        <a href="Contact.html">Contact Us</a>
+
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+
+        <h1>Mental Health Awareness</h1>
+
+        <p>
+            Mental health matters. Learn about emotional well-being,
+            support systems, coping strategies, and healthy living habits.
+        </p>
+
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <!-- Mental Health -->
+        <div id="mental-health" class="card">
+
+            <h2>What is Mental Health?</h2>
+
+            <p>
+                Mental health refers to emotional, psychological,
+                and social well-being.
+            </p>
+
+            <ul>
+                <li>Cope with everyday stress</li>
+                <li>Function in school or work</li>
+                <li>Maintain healthy relationships</li>
+                <li>Recover from setbacks</li>
+                <li>Experience balanced emotions</li>
+            </ul>
+
+            <img src="images/mental.jpeg" alt="Mental Health">
+
+        </div>
+
+        <!-- Factors -->
+        <div class="card">
+
+            <h2>Factors Affecting Mental Health</h2>
+
+            <div class="grid">
+
+                <div class="mini-card">
+                    <h3>Biological Factors</h3>
+                    <ul>
+                        <li>Genetics</li>
+                        <li>Hormones</li>
+                        <li>Poor sleep</li>
+                    </ul>
+                </div>
+
+                <div class="mini-card">
+                    <h3>Psychological Factors</h3>
+                    <ul>
+                        <li>Stress</li>
+                        <li>Trauma</li>
+                        <li>Negative thinking</li>
+                    </ul>
+                </div>
+
+                <div class="mini-card">
+                    <h3>Social Factors</h3>
+                    <ul>
+                        <li>Bullying</li>
+                        <li>Loneliness</li>
+                        <li>Work pressure</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <img src="images/types.jpeg" alt="Factors">
+
+        </div>
+
+        <!-- Signs -->
+        <div class="card">
+
+            <h2>Signs of Mental Health Issues</h2>
+
+            <div class="grid">
+
+                <div class="mini-card">
+                    <h3>Emotional Signs</h3>
+                    <ul>
+                        <li>Sadness</li>
+                        <li>Anxiety</li>
+                        <li>Mood swings</li>
+                    </ul>
+                </div>
+
+                <div class="mini-card">
+                    <h3>Behavioral Signs</h3>
+                    <ul>
+                        <li>Withdrawal</li>
+                        <li>Loss of interest</li>
+                        <li>Difficulty concentrating</li>
+                    </ul>
+                </div>
+
+                <div class="mini-card">
+                    <h3>Physical Signs</h3>
+                    <ul>
+                        <li>Tiredness</li>
+                        <li>Sleep changes</li>
+                        <li>Headaches</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <img src="images/signs.jpeg" alt="Signs">
+
+        </div>
+
+        <!-- Healthy Living -->
+        <div class="card">
+
+            <h2>Healthy Living Tips</h2>
+
+            <div class="grid">
+
+                <div class="mini-card">
+                    <h3>Eat Healthy</h3>
+                    <p>Eat fruits, vegetables, and drink enough water.</p>
+                </div>
+
+                <div class="mini-card">
+                    <h3>Exercise</h3>
+                    <p>Exercise daily to reduce stress and boost mood.</p>
+                </div>
+
+                <div class="mini-card">
+                    <h3>Sleep Well</h3>
+                    <p>Get 7–9 hours of sleep every night.</p>
+                </div>
+
+                <div class="mini-card">
+                    <h3>Stay Connected</h3>
+                    <p>Spend time with supportive friends and family.</p>
+                </div>
+
+            </div>
+
+            <img src="images/healthy.jpeg" alt="Healthy Living">
+
+        </div>
+
+        <!-- Video -->
+        <div class="video-card">
+
+            <h2>Watch More About Mental Health</h2>
+
+            <iframe width="560"
+                height="315"
+                src="https://www.youtube.com/embed/3QIfkeA6HBY"
+                title="Mental Health Video"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+        <!-- Learn More -->
+        <div class="card">
+
+            <h2>Learn More</h2>
+
+            <p>
+                Visit the WHO website for more information about mental health.
+            </p>
+
+            <a href="https://www.who.int/news-room/fact-sheets/detail/mental-health-strengthening-our-response"
+                target="_blank">
+                Visit WHO Website
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

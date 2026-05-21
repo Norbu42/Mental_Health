@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Mental Health Awareness</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#4b2e83;
+            color:#ffffff;
+            line-height:1.8;
+            font-size:18px;
+        }
+
+        /* Navigation */
+
+        nav{
+            background:#2d1b4e;
+            padding:18px 25px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            flex-wrap:wrap;
+            position:sticky;
+            top:0;
+            z-index:1000;
+        }
+
+        /* Logo */
+
+        .logo{
+            display:flex;
+            align-items:center;
+            gap:15px;
+        }
+
+        .logo img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    background:white;
+    padding:5px;
+}
+
+        .logo h2{
+            font-size:28px;
+            color:white;
+        }
+
+        /* Navigation Links */
+
+        .nav-links{
+            display:flex;
+            gap:35px;
+            flex-wrap:wrap;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-size:22px;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:#d8b4ff;
+        }
+
+        /* Hero */
+
+        .hero{
+            text-align:center;
+            padding:70px 20px;
+            background:linear-gradient(to right,#5e3ea1,#8b5cf6);
+        }
+
+        .hero h1{
+            font-size:64px;
+        }
+
+        .hero p{
+            margin-top:15px;
+            font-size:22px;
+        }
+
+        /* Contact Section */
+
+        .container{
+            width:90%;
+            max-width:800px;
+            margin:auto;
+            padding:50px 0;
+        }
+
+        .contact-box{
+            background:#6d4ca3;
+            padding:40px;
+            border-radius:18px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.25);
+        }
+
+        label{
+            display:block;
+            margin-top:18px;
+            font-weight:bold;
+            font-size:20px;
+        }
+
+        input,
+        textarea{
+            width:100%;
+            padding:14px;
+            margin-top:10px;
+            border:none;
+            border-radius:8px;
+            font-size:20px;
+        }
+
+        textarea{
+            resize:none;
+        }
+
+        button{
+            margin-top:25px;
+            padding:14px 30px;
+            border:none;
+            background:#8b5cf6;
+            color:white;
+            font-size:20px;
+            border-radius:8px;
+            cursor:pointer;
+            width:100%;
+        }
+
+        button:hover{
+            background:#a855f7;
+        }
+
+        /* Map Section */
+
+        .card{
+            text-align:center;
+            margin:50px 0;
+        }
+
+        .card h2{
+            font-size:36px;
+            margin-bottom:25px;
+        }
+
+        iframe{
+            max-width:100%;
+            border:0;
+            border-radius:12px;
+        }
+
+        /* Footer */
+
+        footer{
+            background:#2d1b4e;
+            color:white;
+            text-align:center;
+            padding:30px;
+            margin-top:50px;
+        }
+
+        footer p{
+            font-size:20px;
+        }
+
+        /* Responsive */
+
+        @media(max-width:768px){
+
+            nav{
+                justify-content:center;
+                gap:20px;
+            }
+
+            .nav-links{
+                justify-content:center;
+            }
+
+            .hero h1{
+                font-size:42px;
+            }
+
+            .hero p{
+                font-size:20px;
+            }
+
+            .logo h2{
+                font-size:22px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <!-- Logo Section -->
+
+        <div class="logo">
+
+            <!-- Put your generated image here -->
+            <img src="images/logo.jpeg" alt="Mental Health Logo">
+
+            <h2>Mental Health</h2>
+
+        </div>
+
+        <!-- Navigation Links -->
+
+        <div class="nav-links">
+
+            <a href="index.html">Mental Health</a>
+            <a href="About.html">About Us</a>
+            <a href="Contact.html">Contact Us</a>
+
+        </div>
+
+    </nav>
+
+    <!-- Hero -->
+
+    <section class="hero">
+
+        <h1>Contact Us</h1>
+
+        <p>
+            We are here to listen. Send us your message anytime.
+            Or you can visit the location.
+        </p>
+
+    </section>
+
+    <!-- Map Section -->
+
+    <div class="card">
+
+        <h2>Mental Health Support Location</h2>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.2047671730556!2d89.6371461!3d27.462883800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e195000d4a3269%3A0x6dc52a17926a5624!2sThe%20Pema%20Centre!5e0!3m2!1sen!2sbt!4v1778904416538!5m2!1sen!2sbt"
+            width="600"
+            height="450"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+
+    </div>
+
+    <!-- Contact Form -->
+
+    <div class="container">
+
+        <div class="contact-box">
+
+            <form onsubmit="alert('Message sent successfully!'); return false;">
+
+                <label>Email</label>
+
+                <input type="email"
+                    placeholder="Enter your email"
+                    required>
+
+                <label>Message</label>
+
+                <textarea rows="6"
+                    placeholder="Write your message"
+                    required>
+                </textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
